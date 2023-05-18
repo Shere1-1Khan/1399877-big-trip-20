@@ -31,7 +31,7 @@ function callcDate(dateFrom,dateTo){
   const from = dayjs(dateFrom);
   const to = dayjs(dateTo);
   const diff = to.diff(from,'hours', true);
-  const duration = dayjs.duration(diff, 'hours');
+  dayjs.duration(diff, 'hours');
   return duration.format('HH:mm');
 }
 
